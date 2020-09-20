@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-17 14:40:21
- * @LastEditTime: 2020-09-17 18:48:42
+ * @LastEditTime: 2020-09-18 10:06:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /zhoufei-work/src/views/Home.vue
@@ -19,8 +19,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import axios from 'axios'
-import storage from '../storage'
+// import storage from '../storage'
 export default {
   name: 'Home',
   data(){
@@ -34,11 +33,9 @@ export default {
   mounted(){
     // storage.setItem('a',1)
     //  storage.setItem('user',{a:1})
-    storage.clear('a','user')
-    axios.get("http://jsonplaceholder.typicode.com/posts").then((res)=>{
+    this.axios.get("/user/login").then((res)=>{
       console.log(res)
-      this.list = res.data
-      console.log(this.list)
+      this.list = res
     })
   }
 }
