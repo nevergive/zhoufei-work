@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-17 14:40:21
- * @LastEditTime: 2020-09-20 15:26:33
+ * @LastEditTime: 2020-09-21 09:40:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /zhoufei-work/src/views/Home.vue
@@ -10,7 +10,17 @@
   <div class="home">
       <NavHeader></NavHeader>
       <div class="main-indexpage">
-        首页轮播
+          <div class="container">
+            <!-- 首页轮播 <br/>
+            1111
+
+            1
+            1
+            1
+            1
+            1 -->
+            
+          </div>
       </div>
       <NavFooter></NavFooter>
   </div>
@@ -50,3 +60,10 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+@import url('./../assets/sass/base.scss');
+.main-indexpage{
+    height:670px;
+    background: #fafafa;
+}
+</style>

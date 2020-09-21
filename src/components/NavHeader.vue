@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-17 15:39:16
- * @LastEditTime: 2020-09-20 15:15:19
+ * @LastEditTime: 2020-09-21 09:59:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /zhoufei-work/src/components/NavHeader.vue
@@ -146,17 +146,17 @@
 <!--  -->
             <li>
               <a href="#/">服务</a>
-              <div class="item-child">
+              <!-- <div class="item-child">
                 <div class="container">
                 </div>
-              </div>   
+              </div>    -->
             </li>
             <li>
               <a href="#/">社区</a>
-              <div class="item-child">
+              <!-- <div class="item-child">
                 <div class="container">
                 </div>
-              </div>   
+              </div>    -->
             </li>
           </ul>
         </div>
@@ -282,7 +282,6 @@ export default {
             height: 55px;
             display: inline-block;
             background-color: #ff6700;
-            
             &:before{
               content: '';
               display: inline-block;
@@ -308,13 +307,16 @@ export default {
           }
         }
         .nav-header-list{
-          width: 850px;
-          margin-left:-220px; 
+          width: 800px;
           height: 100px;
-          // background: red;
           display: inline-block;
-          
+          padding-left: 50px;
           ul{
+            &:after{
+              display: inline-block;
+              content: '';
+              width: 80px;
+            }
             line-height: 100px;
             li{
               &:hover{
@@ -336,21 +338,15 @@ export default {
                 display: none;
                 position:absolute;
                 transition: all .6s;
-                // border-top:1px solid #e0e0e0;
+                background-color: #ffffff;
                 box-shadow:0px 7px 6px 0px rgba(0,0,0,0.11); 
                 left: 0;
                 right: 0;
+                border: 1px solid #e0e0e0;
                 ul{
                   line-height: normal;
                   height: 230px;
                   width: 100%;
-                  &:before{
-                    display: inline-block;
-                    content: '';
-                    background: #e0e0e0;
-                    width: 100%;
-                    height: 1px;
-                  }
                   li{
                     width: 180px;
                     text-align: center;
@@ -387,7 +383,6 @@ export default {
                       display: none;
                     }
                   }
-                  
                 }
               }
             }
@@ -396,12 +391,13 @@ export default {
         .nav-header-search{
           width: 295px;
           height: 100px;
-          margin-top: 25px;
+          // margin-top: 25px;
           .search-input{
             float: left;
             height: 48px;
             width: 233px;
             border: 1px solid #e0e0e0;
+            margin-top: 25px;
             input{
               width: 96%;
               height: 100%;
@@ -410,6 +406,7 @@ export default {
             }
           }
           .search-btn{
+            margin-top: 25px;
             float: left;
             width: 52px;
             height: 48px;

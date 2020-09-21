@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2020-09-17 20:02:03
- * @LastEditTime: 2020-09-20 15:19:50
+ * @LastEditTime: 2020-09-20 17:18:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /zhoufei-work/src/mock/api.js
  */
-import Mock ,{Random}from 'mockjs'
+import Mock from 'mockjs'
 Mock.mock('/api/user/login',{
     "status":0,
     "data":{
